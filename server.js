@@ -4,15 +4,15 @@ const routes = require('./routes');
 // menjalankan server Hapi dengan asynchronus
 const init = async () => {
   const server = Hapi.server({
-    port: 9000,
+    port: 9001,
     host: 'localhost',
     routes: {
       cors: {
         // tambahkan mekanisme CORD
         origin: ['*'],
       },
-    }.
-  });
+    }
+  })
 
   server.route(routes);
 
